@@ -1,0 +1,72 @@
+name: Weekly Paper Survey
+
+on:
+  schedule:
+    # 毎週月曜 0:00 UTC = 日本時間 9:00
+    - cron: '0 0 * * 1'
+  workflow_dispatch: # 手動実行も可能
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  survey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Claude Code - Paper Survey
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            今日は $(date +%Y-%m-%d) です。
+            prompts/survey-prompt.md の指示に従って、
+            過去7日間の医学論文サーベイを実行してください。
+
+            実行手順:
+            1. prompts/survey-prompt.md を読む
+            2. CLAUDE.md のルールに従う
+            3. PubMed E-utilities API (curl) で論文を検索する
+            4. reports/ 配下の過去レポートを確認して重複を除外する
+            5. 選定した論文の日本語要約を生成する
+            6. reports/$(date +%Y-%m-%d).md に結果を保存する
+
+            検索日付範囲は過去7日間で自動計算してください。
+          claude_args: |
+            --model claude-sonnet-4-6
+            --max-turns 20
+
+      - name: Commit and push report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 新しいレポートがあればコミット
+          if [ -n "$(git status --porcelain reports/)" ]; then
+            git add reports/
+            git commit -m "docs: weekly paper survey $(date +%Y-%m-%d)"
+            git push
+            echo "REPORT_CREATED=true" >> $GITHUB_ENV
+            echo "REPORT_FILE=reports/$(date +%Y-%m-%d).md" >> $GITHUB_ENV
+          else
+            echo "No new report generated."
+            echo "REPORT_CREATED=false" >> $GITHUB_ENV
+          fi
+
+      - name: Notify Discord
+        if: env.REPORT_CREATED == 'true' && secrets.DISCORD_WEBHOOK_URL != ''
+        run: |
+          REPO_URL="https://github.com/${{ github.repository }}"
+          REPORT_DATE=$(date +%Y-%m-%d)
+
+          curl -H "Content-Type: application/json" \
+            -d "{\"content\": \"📚 **週次論文サーベイ完了** (${REPORT_DATE})\\nレポート: ${REPO_URL}/blob/main/reports/${REPORT_DATE}.md\"}" \
+            "${{ secrets.DISCORD_WEBHOOK_URL }}"
