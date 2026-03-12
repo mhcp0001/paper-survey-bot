@@ -40,9 +40,7 @@ jobs:
             6. reports/$(date +%Y-%m-%d).md に結果を保存する
 
             検索日付範囲は過去7日間で自動計算してください。
-          claude_args: |
-            --model claude-sonnet-4-6
-            --max-turns 20
+          claude_args: "--model claude-sonnet-4-6 --max-turns 20"
 
       - name: Commit and push report
         run: |
@@ -62,11 +60,15 @@ jobs:
           fi
 
       - name: Notify Discord
-        if: env.REPORT_CREATED == 'true' && secrets.DISCORD_WEBHOOK_URL != ''
+        if: env.REPORT_CREATED == 'true'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           REPO_URL="https://github.com/${{ github.repository }}"
           REPORT_DATE=$(date +%Y-%m-%d)
 
-          curl -H "Content-Type: application/json" \
-            -d "{\"content\": \"📚 **週次論文サーベイ完了** (${REPORT_DATE})\\nレポート: ${REPO_URL}/blob/main/reports/${REPORT_DATE}.md\"}" \
-            "${{ secrets.DISCORD_WEBHOOK_URL }}"
+          if [ -n "$DISCORD_WEBHOOK_URL" ]; then
+            curl -H "Content-Type: application/json" \
+              -d "{\"content\": \"📚 **週次論文サーベイ完了** (${REPORT_DATE})\\nレポート: ${REPO_URL}/blob/main/reports/${REPORT_DATE}.md\"}" \
+              "$DISCORD_WEBHOOK_URL"
+          fi
