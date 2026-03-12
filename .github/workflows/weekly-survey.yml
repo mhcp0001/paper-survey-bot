@@ -41,6 +41,7 @@ jobs:
             6. reports/$(date +%Y-%m-%d).md に結果を保存する
 
             検索日付範囲は過去7日間で自動計算してください。
+          allowed_tools: "Bash(curl:*),Bash(date:*),Read,Write,Glob,Grep,Edit"
           claude_args: "--model claude-sonnet-4-6 --max-turns 20"
 
       - name: Commit and push report
