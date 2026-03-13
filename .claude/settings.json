@@ -1,11 +1,12 @@
 {
+  "defaultMode": "dontAsk",
   "permissions": {
     "allow": [
-      "Bash(curl:*)",
-      "Bash(date:*)",
-      "Bash(ls:*)",
-      "Bash(cat:*)",
-      "Bash(mkdir:*)",
+      "Bash(curl *)",
+      "Bash(date *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(mkdir *)",
       "Read",
       "Write",
       "Edit",
