@@ -22,8 +22,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Claude Code - Paper Survey
         uses: anthropics/claude-code-action@v1
@@ -63,7 +61,11 @@ jobs:
           claude_args: "--model claude-sonnet-4-6 --max-turns 20"
 
       - name: Commit and push report
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
+          # claude-code-action が認証情報を上書きするため再設定
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
