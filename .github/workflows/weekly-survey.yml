@@ -41,21 +41,20 @@ jobs:
             6. reports/$(date +%Y-%m-%d).md に結果を保存する
 
             検索日付範囲は過去7日間で自動計算してください。
+          show_full_output: true
           settings: |
             {
               "defaultMode": "dontAsk",
               "permissions": {
                 "allow": [
-                  "Bash(curl *)",
-                  "Bash(date *)",
-                  "Bash(ls *)",
-                  "Bash(cat *)",
-                  "Bash(mkdir *)",
+                  "Bash(*)",
                   "Read",
                   "Write",
                   "Edit",
                   "Glob",
-                  "Grep"
+                  "Grep",
+                  "WebFetch(*)",
+                  "WebSearch(*)"
                 ]
               }
             }

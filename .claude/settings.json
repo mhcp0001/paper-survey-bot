@@ -2,16 +2,14 @@
   "defaultMode": "dontAsk",
   "permissions": {
     "allow": [
-      "Bash(curl *)",
-      "Bash(date *)",
-      "Bash(ls *)",
-      "Bash(cat *)",
-      "Bash(mkdir *)",
+      "Bash(*)",
       "Read",
       "Write",
       "Edit",
       "Glob",
-      "Grep"
+      "Grep",
+      "WebFetch(*)",
+      "WebSearch(*)"
     ]
   }
 }
