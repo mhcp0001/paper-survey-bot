@@ -76,16 +76,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 新しいレポートまたはstate更新があればコミット
+          REPORT_DATE=$(date +%Y-%m-%d)
+          echo "REPORT_DATE=${REPORT_DATE}" >> $GITHUB_ENV
+
+          # 未コミットの変更があればコミット（Claude Code Actionが既にコミット済みの場合もある）
           if [ -n "$(git status --porcelain reports/ state/)" ]; then
             git add reports/ state/
-            git commit -m "docs: weekly paper survey $(date +%Y-%m-%d)"
+            git commit -m "docs: weekly paper survey ${REPORT_DATE}"
             git push
+          fi
+
+          # レポートの存在で判定（Claude Code Actionが直接コミットした場合も検出）
+          if [ -f "reports/${REPORT_DATE}/report.md" ]; then
             echo "REPORT_CREATED=true" >> $GITHUB_ENV
-            REPORT_DATE=$(date +%Y-%m-%d)
-            echo "REPORT_DATE=${REPORT_DATE}" >> $GITHUB_ENV
           else
-            echo "No new report generated."
+            echo "No report found for ${REPORT_DATE}."
             echo "REPORT_CREATED=false" >> $GITHUB_ENV
           fi
 
@@ -100,10 +105,15 @@ jobs:
           if [ -n "$DISCORD_WEBHOOK_URL" ]; then
             # PDFダウンロード数を取得
             PDF_COUNT=$(find "reports/${REPORT_DATE}" -name "*.pdf" 2>/dev/null | wc -l)
-            # ドメイン検索数を取得
-            DOMAIN_COUNT=$(jq -r '.domains_searched | length' "reports/${REPORT_DATE}/survey.json" 2>/dev/null || echo "?")
-            # 新規論文数を取得
-            PAPER_COUNT=$(jq -r '.papers | length' "reports/${REPORT_DATE}/survey.json" 2>/dev/null || echo "?")
+            # survey.jsonから統計を取得
+            SURVEY_JSON="reports/${REPORT_DATE}/survey.json"
+            if [ -f "$SURVEY_JSON" ]; then
+              DOMAIN_COUNT=$(python3 -c "import json; d=json.load(open('$SURVEY_JSON')); print(len(d.get('domains_searched',[])))" 2>/dev/null || echo "?")
+              PAPER_COUNT=$(python3 -c "import json; d=json.load(open('$SURVEY_JSON')); print(len(d.get('papers',[])))" 2>/dev/null || echo "?")
+            else
+              DOMAIN_COUNT="?"
+              PAPER_COUNT="?"
+            fi
 
             curl -H "Content-Type: application/json" \
               -d "{\"content\": \"📚 **週次論文サーベイ完了** (${REPORT_DATE})\\nレポート: ${REPO_URL}/blob/main/reports/${REPORT_DATE}/report.md\\n検索ドメイン: ${DOMAIN_COUNT}領域 | 新規論文: ${PAPER_COUNT}本 | PDF: ${PDF_COUNT}本\"}" \
