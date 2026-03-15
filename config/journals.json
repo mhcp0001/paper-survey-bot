@@ -1,0 +1,37 @@
+{
+  "_comment": "小児科サーベイ対象ジャーナル。Tier制で優先度管理。PubMedのjournal abbreviationを使用。",
+  "tier1_general": [
+    {"name": "New England Journal of Medicine", "abbreviation": "NEJM", "pubmed_tag": "N Engl J Med[jour]"},
+    {"name": "The Lancet", "abbreviation": "Lancet", "pubmed_tag": "Lancet[jour]"},
+    {"name": "JAMA", "abbreviation": "JAMA", "pubmed_tag": "JAMA[jour]"},
+    {"name": "JAMA Pediatrics", "abbreviation": "JAMA Pediatr", "pubmed_tag": "JAMA Pediatr[jour]"},
+    {"name": "Pediatrics", "abbreviation": "Pediatrics", "pubmed_tag": "Pediatrics[jour]"},
+    {"name": "Journal of Pediatrics", "abbreviation": "J Pediatr", "pubmed_tag": "J Pediatr[jour]"},
+    {"name": "Lancet Child & Adolescent Health", "abbreviation": "Lancet Child Adolesc Health", "pubmed_tag": "Lancet Child Adolesc Health[jour]"},
+    {"name": "BMJ", "abbreviation": "BMJ", "pubmed_tag": "BMJ[jour]"}
+  ],
+  "tier2_specialty": [
+    {"name": "Blood", "abbreviation": "Blood", "pubmed_tag": "Blood[jour]", "domains": ["B"]},
+    {"name": "Journal of Clinical Oncology", "abbreviation": "JCO", "pubmed_tag": "J Clin Oncol[jour]", "domains": ["B"]},
+    {"name": "Kidney International", "abbreviation": "Kidney Int", "pubmed_tag": "Kidney Int[jour]", "domains": ["A"]},
+    {"name": "Pediatric Nephrology", "abbreviation": "Pediatr Nephrol", "pubmed_tag": "Pediatr Nephrol[jour]", "domains": ["A"]},
+    {"name": "Journal of Allergy and Clinical Immunology", "abbreviation": "JACI", "pubmed_tag": "J Allergy Clin Immunol[jour]", "domains": ["F"]},
+    {"name": "Epilepsia", "abbreviation": "Epilepsia", "pubmed_tag": "Epilepsia[jour]", "domains": ["G"]},
+    {"name": "Neonatology", "abbreviation": "Neonatology", "pubmed_tag": "Neonatology[jour]", "domains": ["E"]},
+    {"name": "Archives of Disease in Childhood - Fetal & Neonatal Edition", "abbreviation": "Arch Dis Child Fetal Neonatal Ed", "pubmed_tag": "Arch Dis Child Fetal Neonatal Ed[jour]", "domains": ["E"]},
+    {"name": "Archives of Disease in Childhood", "abbreviation": "Arch Dis Child", "pubmed_tag": "Arch Dis Child[jour]", "domains": ["*"]},
+    {"name": "Pediatric Critical Care Medicine", "abbreviation": "Pediatr Crit Care Med", "pubmed_tag": "Pediatr Crit Care Med[jour]", "domains": ["D"]},
+    {"name": "Journal of Pediatric Gastroenterology and Nutrition", "abbreviation": "JPGN", "pubmed_tag": "J Pediatr Gastroenterol Nutr[jour]", "domains": ["I"]},
+    {"name": "Pediatric Blood & Cancer", "abbreviation": "Pediatr Blood Cancer", "pubmed_tag": "Pediatr Blood Cancer[jour]", "domains": ["B"]},
+    {"name": "Pediatric Infectious Disease Journal", "abbreviation": "PIDJ", "pubmed_tag": "Pediatr Infect Dis J[jour]", "domains": ["C"]},
+    {"name": "Pediatric Allergy and Immunology", "abbreviation": "PAI", "pubmed_tag": "Pediatr Allergy Immunol[jour]", "domains": ["F"]},
+    {"name": "Developmental Medicine & Child Neurology", "abbreviation": "DMCN", "pubmed_tag": "Dev Med Child Neurol[jour]", "domains": ["G"]},
+    {"name": "Diabetes Care", "abbreviation": "Diabetes Care", "pubmed_tag": "Diabetes Care[jour]", "domains": ["H"]},
+    {"name": "Journal of Pediatric Surgery", "abbreviation": "J Pediatr Surg", "pubmed_tag": "J Pediatr Surg[jour]", "domains": ["D", "I"]},
+    {"name": "Pediatric Cardiology", "abbreviation": "Pediatr Cardiol", "pubmed_tag": "Pediatr Cardiol[jour]", "domains": ["J"]}
+  ],
+  "tier3_japan": [
+    {"name": "Pediatrics International", "abbreviation": "Pediatr Int", "pubmed_tag": "Pediatr Int[jour]", "domains": ["*"]},
+    {"name": "International Journal of Hematology", "abbreviation": "Int J Hematol", "pubmed_tag": "Int J Hematol[jour]", "domains": ["B"]}
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "_comment": "小児科全般のサーベイ設定。ドメイン制で管理。詳細仕様: docs/domain-specification.md",
+  "specialty": "小児科",
+  "role_description": "小児科全般に精通した医師アシスタント。各サブスペシャリティの最新エビデンスを横断的にサーベイする",
+  "domains": [
+    {
+      "id": "A-1",
+      "domain": "A",
+      "domain_name": "小児腎臓病",
+      "name": "小児ネフローゼ症候群",
+      "frequency": "weekly",
+      "search_queries": [
+        "childhood nephrotic syndrome steroid-dependent rituximab",
+        "genetic nephrotic syndrome children NPHS2 treatment"
+      ]
+    },
+    {
+      "id": "A-2",
+      "domain": "A",
+      "domain_name": "小児腎臓病",
+      "name": "小児IgA腎症・紫斑病性腎炎",
+      "frequency": "weekly",
+      "search_queries": [
+        "IgA vasculitis nephritis children treatment outcome",
+        "pediatric IgA nephropathy SGLT2 inhibitor proteinuria"
+      ]
+    },
+    {
+      "id": "A-3",
+      "domain": "A",
+      "domain_name": "小児腎臓病",
+      "name": "小児AKI・腎代替療法",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric AKI KDIGO biomarkers NGAL outcome",
+        "neonatal acute kidney injury CRRT peritoneal dialysis"
+      ]
+    },
+    {
+      "id": "A-4",
+      "domain": "A",
+      "domain_name": "小児腎臓病",
+      "name": "先天性腎尿路異常（CAKUT）",
+      "frequency": "weekly",
+      "search_queries": [
+        "CAKUT children long-term renal outcome CKD",
+        "vesicoureteral reflux antibiotic prophylaxis children RCT"
+      ]
+    },
+    {
+      "id": "B-1",
+      "domain": "B",
+      "domain_name": "小児血液・腫瘍",
+      "name": "小児ALL",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric ALL MRD-guided therapy CAR-T blinatumomab",
+        "Ph-like ALL children targeted therapy JAK inhibitor"
+      ]
+    },
+    {
+      "id": "B-2",
+      "domain": "B",
+      "domain_name": "小児血液・腫瘍",
+      "name": "小児AML",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric AML molecular classification venetoclax",
+        "gemtuzumab ozogamicin children AML menin inhibitor"
+      ]
+    },
+    {
+      "id": "B-3",
+      "domain": "B",
+      "domain_name": "小児血液・腫瘍",
+      "name": "小児リンパ腫",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric Hodgkin lymphoma PET-adapted brentuximab vedotin",
+        "ALK-positive ALCL children crizotinib outcome"
+      ]
+    },
+    {
+      "id": "B-4",
+      "domain": "B",
+      "domain_name": "小児血液・腫瘍",
+      "name": "小児固形腫瘍",
+      "frequency": "weekly",
+      "search_queries": [
+        "neuroblastoma high-risk immunotherapy dinutuximab lorlatinib",
+        "medulloblastoma molecular subgroup treatment larotrectinib NTRK pediatric"
+      ]
+    },
+    {
+      "id": "B-5",
+      "domain": "B",
+      "domain_name": "小児血液・腫瘍",
+      "name": "造血幹細胞移植",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric haploidentical transplant GVHD abatacept ruxolitinib",
+        "gene therapy primary immunodeficiency sickle cell children"
+      ]
+    },
+    {
+      "id": "C-1",
+      "domain": "C",
+      "domain_name": "小児感染症",
+      "name": "ワクチン",
+      "frequency": "weekly",
+      "search_queries": [
+        "nirsevimab RSV prophylaxis infants efficacy safety",
+        "HPV vaccination Japan catch-up pediatric immunization schedule"
+      ]
+    },
+    {
+      "id": "C-2",
+      "domain": "C",
+      "domain_name": "小児感染症",
+      "name": "小児市中感染症",
+      "frequency": "weekly",
+      "search_queries": [
+        "invasive group A streptococcus children incidence antimicrobial stewardship",
+        "short-course antibiotic pediatric community pneumonia UTI"
+      ]
+    },
+    {
+      "id": "C-3",
+      "domain": "C",
+      "domain_name": "小児感染症",
+      "name": "新生児感染症",
+      "frequency": "weekly",
+      "search_queries": [
+        "neonatal early-onset sepsis calculator empiric antibiotics",
+        "necrotizing enterocolitis prevention probiotics lactoferrin GBS screening"
+      ]
+    },
+    {
+      "id": "C-4",
+      "domain": "C",
+      "domain_name": "小児感染症",
+      "name": "免疫不全児の感染管理",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric febrile neutropenia outpatient management low-risk",
+        "letermovir CMV prophylaxis children SCID newborn screening"
+      ]
+    },
+    {
+      "id": "D-1",
+      "domain": "D",
+      "domain_name": "小児救急・集中治療",
+      "name": "小児救急",
+      "frequency": "weekly",
+      "search_queries": [
+        "Phoenix sepsis criteria children PECARN head injury",
+        "pediatric appendicitis nonoperative PALS guideline resuscitation"
+      ]
+    },
+    {
+      "id": "D-2",
+      "domain": "D",
+      "domain_name": "小児救急・集中治療",
+      "name": "小児集中治療（PICU）",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric septic shock fluid resuscitation balanced crystalloid",
+        "pediatric ECMO PEPaNIC early nutrition PICU outcome"
+      ]
+    },
+    {
+      "id": "E-1",
+      "domain": "E",
+      "domain_name": "新生児科・周産期",
+      "name": "早産児管理",
+      "frequency": "weekly",
+      "search_queries": [
+        "LISA surfactant preterm BPD prevention steroid caffeine",
+        "retinopathy prematurity anti-VEGF periviable 22 weeks resuscitation"
+      ]
+    },
+    {
+      "id": "E-2",
+      "domain": "E",
+      "domain_name": "新生児科・周産期",
+      "name": "新生児黄疸・代謝異常",
+      "frequency": "weekly",
+      "search_queries": [
+        "neonatal hyperbilirubinemia guideline phototherapy exchange",
+        "expanded newborn screening SMA lysosomal hypoglycemia"
+      ]
+    },
+    {
+      "id": "F-1",
+      "domain": "F",
+      "domain_name": "小児アレルギー・呼吸器・免疫",
+      "name": "小児喘息",
+      "frequency": "weekly",
+      "search_queries": [
+        "dupilumab tezepelumab children severe asthma biologic",
+        "preschool wheeze phenotype GINA SMART therapy pediatric"
+      ]
+    },
+    {
+      "id": "F-2",
+      "domain": "F",
+      "domain_name": "小児アレルギー・呼吸器・免疫",
+      "name": "食物アレルギー",
+      "frequency": "weekly",
+      "search_queries": [
+        "food allergy early introduction prevention omalizumab OUtMATCH",
+        "oral immunotherapy peanut children multi-food OIT"
+      ]
+    },
+    {
+      "id": "F-3",
+      "domain": "F",
+      "domain_name": "小児アレルギー・呼吸器・免疫",
+      "name": "アトピー性皮膚炎",
+      "frequency": "weekly",
+      "search_queries": [
+        "dupilumab infants atopic dermatitis JAK inhibitor children",
+        "emollient prevention atopic dermatitis newborn atopic march"
+      ]
+    },
+    {
+      "id": "G-1",
+      "domain": "G",
+      "domain_name": "小児神経・発達",
+      "name": "小児てんかん",
+      "frequency": "weekly",
+      "search_queries": [
+        "Dravet syndrome fenfluramine cannabidiol epilepsy children",
+        "status epilepticus second-line children genetic epilepsy precision medicine"
+      ]
+    },
+    {
+      "id": "G-2",
+      "domain": "G",
+      "domain_name": "小児神経・発達",
+      "name": "神経発達症（NDD）",
+      "frequency": "weekly",
+      "search_queries": [
+        "autism early screening diagnosis ASD intervention outcome",
+        "ADHD children non-stimulant viloxazine exome sequencing intellectual disability"
+      ]
+    },
+    {
+      "id": "G-3",
+      "domain": "G",
+      "domain_name": "小児神経・発達",
+      "name": "SMA・遺伝性神経筋疾患",
+      "frequency": "weekly",
+      "search_queries": [
+        "SMA gene therapy onasemnogene nusinersen risdiplam newborn screening",
+        "Duchenne muscular dystrophy gene therapy exon skipping viltolarsen"
+      ]
+    },
+    {
+      "id": "H-1",
+      "domain": "H",
+      "domain_name": "小児内分泌・代謝",
+      "name": "1型糖尿病",
+      "frequency": "weekly",
+      "search_queries": [
+        "teplizumab type 1 diabetes prevention children",
+        "automated insulin delivery closed loop DKA cerebral edema pediatric"
+      ]
+    },
+    {
+      "id": "H-2",
+      "domain": "H",
+      "domain_name": "小児内分泌・代謝",
+      "name": "甲状腺疾患・成長障害",
+      "frequency": "weekly",
+      "search_queries": [
+        "growth hormone therapy children long-term safety somapacitan",
+        "central precocious puberty increasing incidence obesity congenital hypothyroidism"
+      ]
+    },
+    {
+      "id": "H-3",
+      "domain": "H",
+      "domain_name": "小児内分泌・代謝",
+      "name": "肥満・メタボリック症候群",
+      "frequency": "weekly",
+      "search_queries": [
+        "semaglutide pediatric obesity STEP TEENS liraglutide",
+        "AAP childhood obesity guideline pharmacotherapy bariatric adolescents"
+      ]
+    },
+    {
+      "id": "I-1",
+      "domain": "I",
+      "domain_name": "小児消化器",
+      "name": "小児IBD",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric Crohn disease biologic vedolizumab ustekinumab risankizumab",
+        "exclusive enteral nutrition children Crohn VEO-IBD genetic"
+      ]
+    },
+    {
+      "id": "I-2",
+      "domain": "I",
+      "domain_name": "小児消化器",
+      "name": "小児肝疾患",
+      "frequency": "weekly",
+      "search_queries": [
+        "biliary atresia Kasai procedure timing outcome",
+        "pediatric NAFLD MASLD living donor liver transplant children"
+      ]
+    },
+    {
+      "id": "J-1",
+      "domain": "J",
+      "domain_name": "小児循環器",
+      "name": "先天性心疾患（CHD）",
+      "frequency": "weekly",
+      "search_queries": [
+        "Fontan associated liver disease transcatheter pulmonary valve",
+        "adult congenital heart disease transition fetal cardiac intervention"
+      ]
+    },
+    {
+      "id": "J-2",
+      "domain": "J",
+      "domain_name": "小児循環器",
+      "name": "川崎病",
+      "frequency": "weekly",
+      "search_queries": [
+        "Kawasaki disease IVIG-resistant infliximab corticosteroid coronary aneurysm",
+        "MIS-C epidemiology decline Kawasaki Japan Kobayashi score"
+      ]
+    },
+    {
+      "id": "K-1",
+      "domain": "K",
+      "domain_name": "小児特有の横断的テーマ",
+      "name": "小児薬理学",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric pharmacokinetics model-informed precision dosing children",
+        "off-label drug use children Japan pediatric regulation"
+      ]
+    },
+    {
+      "id": "K-2",
+      "domain": "K",
+      "domain_name": "小児特有の横断的テーマ",
+      "name": "小児緩和ケア・終末期",
+      "frequency": "weekly",
+      "search_queries": [
+        "pediatric palliative care advance care planning children",
+        "sibling support pediatric life-limiting condition Japan"
+      ]
+    },
+    {
+      "id": "K-3",
+      "domain": "K",
+      "domain_name": "小児特有の横断的テーマ",
+      "name": "小児虐待",
+      "frequency": "weekly",
+      "search_queries": [
+        "abusive head trauma diagnosis criteria skeletal survey child abuse",
+        "child maltreatment recognition pediatrician Japan"
+      ]
+    },
+    {
+      "id": "K-4",
+      "domain": "K",
+      "domain_name": "小児特有の横断的テーマ",
+      "name": "トランジション医療",
+      "frequency": "weekly",
+      "search_queries": [
+        "transition care chronic disease adolescent adult pediatric",
+        "childhood cancer survivor long-term follow-up COG Japan"
+      ]
+    }
+  ],
+  "selection_criteria": {
+    "priority_order": [
+      "RCT、メタ解析、大規模コホート > 観察研究 > 症例報告",
+      "臨床現場への影響が大きいもの",
+      "ガイドライン変更につながりうるもの",
+      "日本の臨床に関連性が高いもの"
+    ],
+    "top_detailed": 5,
+    "total_papers": 15
+  }
+}
