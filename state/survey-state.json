@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_global_run": "2026-03-16T00:00:00Z",
+  "last_global_run": "2026-03-23T00:00:00Z",
   "reported_pmids": {
     "41801211": {
       "first_reported": "2026-03-15",
@@ -221,47 +221,122 @@
       "first_reported": "2026-03-16",
       "domain": "B-4/K",
       "title_snippet": "Benefits of Physiotherapy Interventions in Survivors of Childhood Cancer: A Systematic Review with Meta-Analysis"
+    },
+    "41843763": {
+      "first_reported": "2026-03-23",
+      "domain": "I-1",
+      "title_snippet": "Ustekinumab therapy for moderately to severely active pediatric Crohn's disease: UNITI Jr study..."
+    },
+    "41843217": {
+      "first_reported": "2026-03-23",
+      "domain": "A-1",
+      "title_snippet": "Rituximab-induced hypogammaglobulinemia in childhood nephrotic syndrome: a systematic review and meta-analysis"
+    },
+    "41859680": {
+      "first_reported": "2026-03-23",
+      "domain": "H-1",
+      "title_snippet": "Long-term efficacy and safety of Control-IQ technology in younger children with type 1 diabetes in Italy"
+    },
+    "41860325": {
+      "first_reported": "2026-03-23",
+      "domain": "K-2",
+      "title_snippet": "Society of Critical Care Medicine 2026 Guidelines on the Care and Management of Pediatric and Neonatal ICU Patients at the End of Life"
+    },
+    "41848774": {
+      "first_reported": "2026-03-23",
+      "domain": "G-1",
+      "title_snippet": "Practical consensus recommendations for polytherapy involving stiripentol in Dravet syndrome"
+    },
+    "41846331": {
+      "first_reported": "2026-03-23",
+      "domain": "B-1",
+      "title_snippet": "Clinical Analysis of Blinatumomab in the Treatment of 21 Children with Relapsed/Refractory B-Cell ALL"
+    },
+    "41863591": {
+      "first_reported": "2026-03-23",
+      "domain": "J-1",
+      "title_snippet": "International Experience of Transcatheter Sinus Venosus Defect Closure in Children and Adolescents"
+    },
+    "41864333": {
+      "first_reported": "2026-03-23",
+      "domain": "E-2",
+      "title_snippet": "Genomic newborn screening as a paradigm shift in rare disease management, with emphasis on endocrine conditions"
+    },
+    "41864361": {
+      "first_reported": "2026-03-23",
+      "domain": "C-3",
+      "title_snippet": "Population Pharmacokinetics and Dosing Regimen Optimization of Ceftazidime in Plasma and CSF of Neonatal Sepsis Patients"
+    },
+    "41864216": {
+      "first_reported": "2026-03-23",
+      "domain": "C-3",
+      "title_snippet": "Neonatal sepsis in Africa: what are we missing?"
+    },
+    "41860109": {
+      "first_reported": "2026-03-23",
+      "domain": "E-1",
+      "title_snippet": "Patent Ductus Arteriosus Persistence and Neurodevelopmental Outcomes: A Restrictive Treatment Approach"
+    },
+    "41860555": {
+      "first_reported": "2026-03-23",
+      "domain": "F-2",
+      "title_snippet": "Oral Immunotherapy With or Without Probiotics vs Avoidance for Children With Food Allergy"
+    },
+    "41830512": {
+      "first_reported": "2026-03-23",
+      "domain": "B-5",
+      "title_snippet": "Exploring Affordable Curative Therapy for Sickle Cell Disease in Africa: A Comprehensive Overview"
+    },
+    "41864993": {
+      "first_reported": "2026-03-23",
+      "domain": "J-2",
+      "title_snippet": "Retrospective study: clinical analysis of Kawasaki disease complicated with macrophage activation syndrome"
+    },
+    "41857344": {
+      "first_reported": "2026-03-23",
+      "domain": "H-3",
+      "title_snippet": "Pilot Randomised Controlled Trial of the Feasibility and Acceptability of Family-Based Time Limited Eating to Treat Obesity"
     }
   },
   "domains": {
-    "A-1": {"name": "小児ネフローゼ症候群", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "A-2": {"name": "小児IgA腎症・紫斑病性腎炎", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 1, "new_hits_last_run": 1},
-    "A-3": {"name": "小児AKI・腎代替療法", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "A-4": {"name": "先天性腎尿路異常（CAKUT）", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "B-1": {"name": "小児ALL", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "B-2": {"name": "小児AML", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "B-3": {"name": "小児リンパ腫", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "B-4": {"name": "小児固形腫瘍", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 2, "new_hits_last_run": 2},
-    "B-5": {"name": "造血幹細胞移植", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "C-1": {"name": "ワクチン", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "C-2": {"name": "小児市中感染症", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 1, "new_hits_last_run": 1},
-    "C-3": {"name": "新生児感染症", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "C-4": {"name": "免疫不全児の感染管理", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "D-1": {"name": "小児救急", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "D-2": {"name": "小児集中治療（PICU）", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "E-1": {"name": "早産児管理", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 5, "new_hits_last_run": 5},
-    "E-2": {"name": "新生児黄疸・代謝異常", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 1, "new_hits_last_run": 1},
-    "F-1": {"name": "小児喘息", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 1, "new_hits_last_run": 1},
-    "F-2": {"name": "食物アレルギー", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "F-3": {"name": "アトピー性皮膚炎", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "G-1": {"name": "小児てんかん", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "G-2": {"name": "神経発達症（NDD）", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 2, "new_hits_last_run": 2},
-    "G-3": {"name": "SMA・遺伝性神経筋疾患", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "H-1": {"name": "1型糖尿病", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "H-2": {"name": "甲状腺疾患・成長障害", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 1, "new_hits_last_run": 1},
-    "H-3": {"name": "肥満・メタボリック症候群", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "I-1": {"name": "小児IBD", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "I-2": {"name": "小児肝疾患", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "J-1": {"name": "先天性心疾患（CHD）", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 1, "new_hits_last_run": 1},
-    "J-2": {"name": "川崎病", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "K-1": {"name": "小児薬理学", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "K-2": {"name": "小児緩和ケア・終末期", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "K-3": {"name": "小児虐待", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0},
-    "K-4": {"name": "トランジション医療", "frequency": "weekly", "last_searched": "2026-03-16T00:00:00Z", "next_scheduled": "2026-03-23T00:00:00Z", "total_hits_last_run": 0, "new_hits_last_run": 0}
+    "A-1": {"name": "小児ネフローゼ症候群", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 20, "new_hits_last_run": 1},
+    "A-2": {"name": "小児IgA腎症・紫斑病性腎炎", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 20, "new_hits_last_run": 0},
+    "A-3": {"name": "小児AKI・腎代替療法", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 20, "new_hits_last_run": 0},
+    "A-4": {"name": "先天性腎尿路異常（CAKUT）", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 20, "new_hits_last_run": 0},
+    "B-1": {"name": "小児ALL", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 3, "new_hits_last_run": 1},
+    "B-2": {"name": "小児AML", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 50, "new_hits_last_run": 0},
+    "B-3": {"name": "小児リンパ腫", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 50, "new_hits_last_run": 0},
+    "B-4": {"name": "小児固形腫瘍", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 8, "new_hits_last_run": 0},
+    "B-5": {"name": "造血幹細胞移植", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 2, "new_hits_last_run": 1},
+    "C-1": {"name": "ワクチン", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 43, "new_hits_last_run": 0},
+    "C-2": {"name": "小児市中感染症", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 43, "new_hits_last_run": 0},
+    "C-3": {"name": "新生児感染症", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 43, "new_hits_last_run": 2},
+    "C-4": {"name": "免疫不全児の感染管理", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 43, "new_hits_last_run": 0},
+    "D-1": {"name": "小児救急", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 2, "new_hits_last_run": 0},
+    "D-2": {"name": "小児集中治療（PICU）", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 2, "new_hits_last_run": 1},
+    "E-1": {"name": "早産児管理", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 4, "new_hits_last_run": 1},
+    "E-2": {"name": "新生児黄疸・代謝異常", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 4, "new_hits_last_run": 1},
+    "F-1": {"name": "小児喘息", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 8, "new_hits_last_run": 0},
+    "F-2": {"name": "食物アレルギー", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 8, "new_hits_last_run": 1},
+    "F-3": {"name": "アトピー性皮膚炎", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 8, "new_hits_last_run": 0},
+    "G-1": {"name": "小児てんかん", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 1, "new_hits_last_run": 1},
+    "G-2": {"name": "神経発達症（NDD）", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 68, "new_hits_last_run": 0},
+    "G-3": {"name": "SMA・遺伝性神経筋疾患", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 68, "new_hits_last_run": 0},
+    "H-1": {"name": "1型糖尿病", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 1, "new_hits_last_run": 1},
+    "H-2": {"name": "甲状腺疾患・成長障害", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 23, "new_hits_last_run": 0},
+    "H-3": {"name": "肥満・メタボリック症候群", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 2, "new_hits_last_run": 1},
+    "I-1": {"name": "小児IBD", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 27, "new_hits_last_run": 1},
+    "I-2": {"name": "小児肝疾患", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 27, "new_hits_last_run": 0},
+    "J-1": {"name": "先天性心疾患（CHD）", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 4, "new_hits_last_run": 1},
+    "J-2": {"name": "川崎病", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 13, "new_hits_last_run": 1},
+    "K-1": {"name": "小児薬理学", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 6, "new_hits_last_run": 0},
+    "K-2": {"name": "小児緩和ケア・終末期", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 140, "new_hits_last_run": 1},
+    "K-3": {"name": "小児虐待", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 140, "new_hits_last_run": 0},
+    "K-4": {"name": "トランジション医療", "frequency": "weekly", "last_searched": "2026-03-23T00:00:00Z", "next_scheduled": "2026-03-30T00:00:00Z", "total_hits_last_run": 140, "new_hits_last_run": 0}
   },
   "stats": {
-    "total_unique_pmids_reported": 43,
-    "total_runs": 2,
-    "average_new_per_week": 22
+    "total_unique_pmids_reported": 58,
+    "total_runs": 3,
+    "average_new_per_week": 19
   }
 }
